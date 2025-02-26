@@ -1,0 +1,10 @@
+
+div{
+    display: flex;
+    justify-content: center;
+}
+.divi{
+    width: 500px;
+    height: 500px;
+    border: 1px solid greenyellow;
+}

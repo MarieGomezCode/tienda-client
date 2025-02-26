@@ -1,0 +1,19 @@
+<p>lista-productos works!</p>
+<div *ngFor="let producto of productos" class="lista-productos" >
+    <h3>{{producto.nombre}}</h3>
+    <p>{{producto.descripcion}}</p>
+    <p>Precio: {{producto.precio | currency:'COP'}} </p>
+
+</div>
+
+<!--
+*ngFor="let product of products"
+  Esto es de Angular.
+  *ngFor es una directiva estructural que recorre (for) la lista products.
+  products es un array de productos (por ejemplo, viene de un servicio).
+let product crea una variable temporal
+
+ {{ product.name }}
+Interpolación: coloca el valor de product.name dentro del <h3>.
+
+-->
