@@ -18,10 +18,10 @@ Importamos un modelo Product, que probablemente es una interfaz o clase que defi
 /*
 HttpClient es una herramienta que nos permite hacer peticiones HTTP (como GET, POST, PUT, DELETE) a un servidor.
 /*
-  que se encarga de comunicarse con un backend (en este caso, un API en http://localhost:8080/api/products) 
+  que se encarga de comunicarse con un backend (en este caso, un API en http://localhost:8080/api/products)
   para obtener información sobre productos.
 */
-//providedIn: 'root': Indica que el servicio estará disponible en toda la aplicación (es decir, es un singleton). 
+//providedIn: 'root': Indica que el servicio estará disponible en toda la aplicación (es decir, es un singleton).
 // Angular se encarga de crear una única instancia del servicio y compartirla con todos los componentes que lo necesiten.
 @Injectable({
   //	Hace que el servicio esté disponible en toda la app.
@@ -83,6 +83,9 @@ export class ProductoService { //Esto es TypeScript.
       Hace una petición GET a la API, agregando el id a la URL.
       Si id = 3, la petición se haría a http://localhost:8080/api/products/3.
  */
+      crearProducto(producto:Producto):Observable<Producto>{
+        return this.http.post<Producto>(this.miRutaCarnal,producto);
+      }
 
 }
 
@@ -107,3 +110,4 @@ Usa HttpClient para hacer peticiones HTTP de forma sencilla.
   Los servicios son fáciles de probar con pruebas unitarias.
 
 */
+

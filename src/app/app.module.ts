@@ -1,6 +1,6 @@
 import { NgModule, LOCALE_ID } from '@angular/core'; // 🛠 Importamos LOCALE_ID
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
@@ -22,7 +22,8 @@ registerLocaleData(localeEsCo); // Aplica español de Colombia
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-CO' } // 🇨🇴 Establece español de Colombia

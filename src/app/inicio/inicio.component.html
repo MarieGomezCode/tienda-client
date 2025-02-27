@@ -1,7 +1,15 @@
 <p>inicio works!</p>
 <div>
     <div class="divi" >
-
+      <form (ngSubmit)="agregarProducto()">
+        <label >Nombre:</label>
+        <input type="text" name="nombre" [(ngModel)]="nuevoProducto.nombre"  required>
+        <label >Descripcion:</label>
+        <input type="text" name="descripcion" [(ngModel)]="nuevoProducto.descripcion" required>
+        <label >Precio:</label>
+        <input type="number" name="precio" [(ngModel)]="nuevoProducto.precio" required>
+        <button type="submit">Agregar</button>
+      </form>
     </div>
     <div class="divi">
         <app-lista-productos></app-lista-productos>
