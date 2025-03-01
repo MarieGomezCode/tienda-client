@@ -1,17 +1,22 @@
-<p>inicio works!</p>
+<!-- 🏠 Componente de inicio -->
+<p>inicio works!</p> <!-- Mensaje de prueba para verificar que el componente se renderiza -->
+
 <div>
-    <div class="divi" >
-      <form (ngSubmit)="agregarProducto()">
-        <label >Nombre:</label>
-        <input type="text" name="nombre" [(ngModel)]="nuevoProducto.nombre"  required>
-        <label >Descripcion:</label>
-        <input type="text" name="descripcion" [(ngModel)]="nuevoProducto.descripcion" required>
-        <label >Precio:</label>
-        <input type="number" name="precio" [(ngModel)]="nuevoProducto.precio" required>
-        <button type="submit">Agregar</button>
-      </form>
-    </div>
+    <!-- 📝 Formulario para agregar un nuevo producto -->
     <div class="divi">
-        <app-lista-productos></app-lista-productos>
+        <form (ngSubmit)="agregarProducto()"> <!-- 🛠 (ngSubmit): Evento que se ejecuta al enviar el formulario -->
+            <label>Nombre:</label>
+            <input type="text" name="nombre" [(ngModel)]="nuevoProducto.nombre" required> <!-- 🛠 [(ngModel)]: Enlace bidireccional con la propiedad "nombre" del objeto "nuevoProducto" -->
+            <label>Descripcion:</label>
+            <input type="text" name="descripcion" [(ngModel)]="nuevoProducto.descripcion" required> <!-- 🛠 [(ngModel)]: Enlace bidireccional con la propiedad "descripcion" -->
+            <label>Precio:</label>
+            <input type="number" name="precio" [(ngModel)]="nuevoProducto.precio" required> <!-- 🛠 [(ngModel)]: Enlace bidireccional con la propiedad "precio" -->
+            <button type="submit">Agregar</button> <!-- 🛠 Botón para enviar el formulario -->
+        </form>
+    </div>
+
+    <!-- 📦 Componente para mostrar la lista de productos -->
+    <div class="divi">
+        <app-lista-productos></app-lista-productos> <!-- 🛠 Selector del componente "lista-productos" -->
     </div>
 </div>
