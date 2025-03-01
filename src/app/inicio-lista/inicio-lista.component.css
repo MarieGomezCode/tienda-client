@@ -1,0 +1,30 @@
+.container {
+    height: 100vh;
+    background-image:linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1);
+}
+
+.contenido{
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.iniciar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.iniciar
+ button
+,i{
+  margin-left: 1rem;
+}

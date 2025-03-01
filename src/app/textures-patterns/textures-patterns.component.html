@@ -1,0 +1,31 @@
+<!-- textures-patterns.component.html -->
+<div class="container">
+    <h1 class="title">Ejemplos de Patrones con Textures.js</h1>
+    <p class="subtitle">Mostrando varias texturas incluyendo una inspirada en iris pálido</p>
+    
+    <div class="textures-grid">
+      <div class="texture-item">
+        <div #paleIris class="texture-container"></div>
+        <p class="texture-label">Textura Iris Pálido</p>
+      </div>
+      
+      <div class="texture-item">
+        <div #dots class="texture-container"></div>
+        <p class="texture-label">Patrón de Puntos</p>
+      </div>
+      
+      <div class="texture-item">
+        <div #paths class="texture-container"></div>
+        <p class="texture-label">Patrón Entretejido</p>
+      </div>
+      
+      <div class="texture-item">
+        <div #lines class="texture-container"></div>
+        <p class="texture-label">Líneas Diagonales</p>
+      </div>
+    </div>
+    
+    <div *ngIf="!loaded" class="loading-message">
+      Cargando biblioteca Textures.js...
+    </div>
+  </div>

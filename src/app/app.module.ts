@@ -8,7 +8,9 @@ import { registerLocaleData } from '@angular/common'; // 🛠 Importa la funció
 import localeEsCo from '@angular/common/locales/es-CO'; // 🛠 Importa la configuración regional para Colombia
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component'; // 🛠 Importa el componente de detalles de producto
 import { InicioComponent } from './inicio/inicio.component'; // 🛠 Importa el componente de inicio
-import { HttpClientModule } from '@angular/common/http'; // 🛠 Importa el módulo para hacer solicitudes HTTP
+import { HttpClientModule } from '@angular/common/http';
+import { InicioListaComponent } from './inicio-lista/inicio-lista.component';
+import { TexturesPatternsComponent } from './textures-patterns/textures-patterns.component'; // 🛠 Importa el módulo para hacer solicitudes HTTP
 
 registerLocaleData(localeEsCo); // 🛠 Registra la configuración regional para Colombia
 
@@ -17,7 +19,7 @@ registerLocaleData(localeEsCo); // 🛠 Registra la configuración regional para
     AppComponent, // 🛠 Declara el componente principal
     ListaProductosComponent, // 🛠 Declara el componente de lista de productos
     DetallesProductoComponent, // 🛠 Declara el componente de detalles de producto
-    InicioComponent // 🛠 Declara el componente de inicio
+    InicioComponent, InicioListaComponent, TexturesPatternsComponent // 🛠 Declara el componente de inicio
   ],
   imports: [
     BrowserModule, // 🛠 Importa el módulo para aplicaciones web
