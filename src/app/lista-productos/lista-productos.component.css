@@ -1,4 +1,8 @@
 .lista-productos{
-    width: 200px;
-    background-color: blueviolet;
+    width: 170px;
+    border:1px solid rgb(226, 43, 198);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20px;
+    margin: 7px;
+    text-align: center;
 }

@@ -7,7 +7,7 @@
   height: 100vh;
   width: 80%;
   margin: 0 auto;
-  background-color: white;
+  background-color: transparent;
 }
 
 header{
@@ -15,16 +15,85 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  border-bottom: 2px solid pink;
+  height: 70px;
+}
+header h1{
+  color: rgb(255, 255, 255);
+
 }
 
+header .ingreso{
+  background-color: pink;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 12pt;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header .registro{
+  background-color: white;
+  color: pink;
+  padding: 0.5rem 1rem;
+  border: 1px solid pink;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 12pt;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .iniciar{
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
-.iniciar
- button
-,i{
+.iniciar button ,i{
   margin-left: 1rem;
+}
+
+.buscar{
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid pink;
+  height: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+}
+.busqueda{
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.buscar:focus{
+  outline: none;
+  border: 1px solid pink;
+}
+
+i{
+  font-size: 2rem;
+  color: rgb(253, 253, 253);
+}
+ .main{
+  height: 90vh;
+  display: flex;
+ }
+  .main .filtros{
+    width: 30%;
+    height: 100%;
+    background-color: pink;
+  }
+.main .productos{
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+
+.producto
+{
+  display: flex ;
+  float: left;
 }
